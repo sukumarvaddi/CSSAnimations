@@ -1,0 +1,59 @@
+body {
+	font-family: Raleway;
+}
+.headerText {
+	text-align: center;
+}
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	padding: 1.5rem;
+	margin: 1rem;
+	outline: none;
+	border: none;
+	position: relative;
+	/* overflow: hidden; */
+	font-size: 1.5rem;
+}
+.button.left::before {
+	content: "";
+	position: absolute;
+	/* background-color: transparent; */
+	width: 30px;
+	height: 30px;
+	left: 0%;
+	top: 0%;
+	border: 2px solid black;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	transition: width 0.2s ease-in, height 0.2s ease-in;
+	border-radius: 2px;
+}
+.button.left:hover::before {
+	width: 98.5%;
+	height: 95%;
+}
+
+.button.left::after {
+	content: "";
+	position: absolute;
+
+	width: 30px;
+	height: 30px;
+	right: 0px;
+	bottom: 0px;
+	border: 2px solid black;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	transition: width 0.2s ease-in, height 0.2s ease-in;
+	border-radius: 2px;
+}
+
+button.left:hover:after {
+	height: 95%;
+	width: 98.5%;
+}
