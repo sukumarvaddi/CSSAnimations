@@ -1,0 +1,58 @@
+body {
+  background: url("./images/smoothWood.jpeg") repeat;
+  font-family: "Lobster Two", cursive;
+}
+.header {
+  text-align: center;
+  color: gray;
+  font-size: 4rem;
+  text-decoration: wavy;
+}
+
+.photo-gallery {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wolf {
+  padding: 0.5rem 1rem 1rem 1rem;
+  background-color: rgba(128, 128, 128, 0.461);
+  color: white;
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem black;
+}
+.caption {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.wolf:nth-of-type(even) {
+  transform: rotate(-10deg);
+}
+.wolf:nth-of-type(odd) {
+  transform: rotate(10deg);
+}
+
+.wolf:nth-of-type(even)::before {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-color: gray;
+  transform: rotate(-45deg) translate(-30px, -48px);
+}
+.wolf:nth-of-type(odd)::before {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-color: gray;
+  transform: rotate(-45deg) translate(-30px, -48px);
+}
+.wolf:nth-of-type(odd):hover {
+  transform: scale(1.25) rotate(10deg);
+}
+.wolf:nth-of-type(even):hover {
+  transform: scale(1.25) rotate(-10deg);
+}

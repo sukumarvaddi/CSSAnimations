@@ -1,0 +1,74 @@
+.transition-div {
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: red;
+  border-radius: 2px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.transition-div:hover {
+  background-color: blue;
+  width: 30px;
+  height: 100px;
+}
+
+.transition {
+  width: 100px;
+  height: 30px;
+  background-color: red;
+  margin: 10px;
+  transition-property: margin-left;
+  transition-duration: 2s;
+}
+
+.ease {
+  transition-timing-function: ease;
+}
+
+.container:hover .transition {
+  margin-left: 500px;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+.ease-out {
+  transition-timing-function: ease-out;
+}
+.linear {
+  transition-timing-function: linear;
+}
+.step-start {
+  transition-timing-function: step-start;
+}
+.step-end {
+  transition-timing-function: step-end;
+}
+
+.step {
+  transition-timing-function: steps(5);
+}
+
+.start {
+  transition-timing-function: steps(2, start);
+}
+.end {
+  transition-timing-function: steps(2, end);
+}
+.cubic-bezier-curves {
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.multi-transition {
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  transition: width 2s, height 2s, transform 2s, background-color 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.multi-container:hover .multi-transition {
+  transform: translateX(500px);
+  width: 200px;
+  height: 1px;
+  background-color: blue;
+}

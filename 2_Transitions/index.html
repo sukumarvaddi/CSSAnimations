@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controlling our Transitions</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Transition Example</h1>
+    <div class="transition-div"></div>
+    <article style="border: 1px solid blue">
+      <h1>Transition Timing functions</h1>
+
+      <h3>Predefined values</h3>
+      <div class="container">
+        <div class="transition ease">Ease</div>
+        <div class="transition ease-in">Ease-in</div>
+        <div class="transition ease-out">Ease-out</div>
+        <div class="transition linear">Linear</div>
+        <div class="transition step-start">Step-start</div>
+        <div class="transition step-end">Step-end</div>
+      </div>
+
+      <h3>Steps Function</h3>
+      <div class="container">
+        <h5>Step with one parameter</h5>
+        <div class="transition step">Step</div>
+        <h5>Step with two parameter</h5>
+        <div class="transition start">Step-start</div>
+        <div class="transition end">Step-end</div>
+      </div>
+      <h4>Cubic Bezier curves</h4>
+      <div class="container">
+        <div class="transition cubic-bezier-curves">Step</div>
+      </div>
+    </article>
+    <h1>Multiple Transitions</h1>
+    <div class="multi-container">
+      <div class="multi-transition -multiple"></div>
+    </div>
+  </body>
+</html>
